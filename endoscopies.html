@@ -38,6 +38,30 @@
 					</nav>
 
 				<!-- Main -->
+                <head>
+                    <title>Image Gallery</title>
+                    <style>
+                        /* CSS code to enlarge images on hover */
+                        img:hover {
+                            transform: scale(1.1);
+                            transition: transform 0.5s ease;
+                        }
+                    </style>
+                    <script>
+                        // JavaScript code to add event listeners to all images on the page
+                        window.onload = function() {
+                            var images = document.getElementsByTagName('img');
+                            for (var i = 0; i < images.length; i++) {
+                                images[i].addEventListener('mouseover', function() {
+                                    this.style.transform = "scale(1.1)";
+                                });
+                                images[i].addEventListener('mouseout', function() {
+                                    this.style.transform = "scale(1)";
+                                });
+                            }
+                        };
+                    </script>
+                </head>
 					<div id="main">
 
 						<!-- Post -->
