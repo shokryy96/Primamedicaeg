@@ -38,27 +38,52 @@
 					</nav>
 
 				<!-- Main -->
+                <head>
+                    <title>Image Gallery</title>
+                    <style>
+                       
+                        /* CSS code to enlarge images on hover */
+                        img:hover {
+                            transform: scale(1.1);
+                            transition: transform 0.5s ease;
+                        }
+                    </style>
+                    <script>
+                        // JavaScript code to add event listeners to all images on the page
+                        window.onload = function() {
+                            var images = document.getElementsByTagName('img');
+                            for (var i = 0; i < images.length; i++) {
+                                images[i].addEventListener('mouseover', function() {
+                                    this.style.transform = "scale(1.1)";
+                                });
+                                images[i].addEventListener('mouseout', function() {
+                                    this.style.transform = "scale(1)";
+                                });
+                            }
+                        };
+                    </script>
+                </head>
 					<div id="main">
-
+                        
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
 									<h1>surgical instruments</h1>
-								</header><div class="image main"><img src="images/pic039.jpg" alt="" /></div>
-								<ul class="actions special"></li></ul>
+                                    <div class="image main"><img src="images/pic039.jpg" alt="" /></div>	
+                                
                                
 				<p> When it comes to surgical procedures, the quality of surgical instruments is of utmost importance. At our company, we understand the critical role that high-quality surgical instruments play in ensuring the best possible outcomes for patients. That's why we are committed to providing only the best quality products, manufactured with precision and care.</p>
                                 <div class="row">
-  				<img src="images/pic031.jpg" alt="" style="width:33.3%"><img src="images/pic032.jpg" alt="" style="width:33.3%"><img src="images/pic033.jpg" alt="" style="width:33.3%">
- 				</div>
+  			                    <img src="images/pic031.jpg" alt="" style="width:33.3%"><img src="images/pic032.jpg" alt="" style="width:33.3%"><img src="images/pic033.jpg" alt="" style="width:33.3%">
+                                </div>
 				<p> Furthermore, we are proud to offer a warranty on all of our surgical instruments. This provides our customers with peace of mind, knowing that they are investing in a reliable and durable product that will last. We stand behind our products and are confident in their quality.</p>
                                 <div class="row">
-  				<img src="images/pic034.jpg" alt="" style="width:33.3%"><img src="images/pic035.jpg" alt="" style="width:33.3%"><img src="images/pic03.jpg" alt="" style="width:33.3%">
- 				</div>
+  				                <img src="images/pic034.jpg" alt="" style="width:33.3%"><img src="images/pic035.jpg" alt="" style="width:33.3%"><img src="images/pic03.jpg" alt="" style="width:33.3%">
+ 				                </div>
 				<p> Despite our commitment to quality, we understand that cost is an important consideration for many healthcare professionals. That's why we offer our high-quality surgical instruments at competitive prices. We believe that everyone should have access to the best possible tools and equipment to provide the highest level of care to patients.</p>				
                                 <div class="row">
-  				<img src="images/pic036.jpg" alt="" style="width:33.3%"><img src="images/pic037.jpg" alt="" style="width:33.3%"><img src="images/pic038.jpg" alt="" style="width:33.3%">
- 				</div>
+  				                <img src="images/pic036.jpg" alt="" style="width:33.3%"><img src="images/pic037.jpg" alt="" style="width:33.3%"><img src="images/pic038.jpg" alt="" style="width:33.3%">
+ 				                </div>
 				<p> In summary, our company is dedicated to providing the best quality surgical instruments, backed by a warranty, and offered at low prices. We are committed to ensuring that healthcare professionals have access to the tools they need to provide the highest level of care and safety to their patients.</p>
                                                             
 														
