@@ -40,18 +40,43 @@
 
 				<!-- Main -->
 					<div id="main">
+                        <head>
+                            <title>Image Gallery</title>
 
+                            <style>
+                                
+                                /* CSS code to enlarge images on hover */
+                                img:hover {
+                                    transform: scale(1.1);
+                                    transition: transform 0.5s ease;
+                                }
+                            </style>
+                            <script>
+                                // JavaScript code to add event listeners to all images on the page
+                                window.onload = function() {
+                                    var images = document.getElementsByTagName('img');
+                                    for (var i = 0; i < images.length; i++) {
+                                        images[i].addEventListener('mouseover', function() {
+                                            this.style.transform = "scale(1.1)";
+                                        });
+                                        images[i].addEventListener('mouseout', function() {
+                                            this.style.transform = "scale(1)";
+                                        });
+                                    }
+                                };
+                            </script>
+                        </head>
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
 									<h1>ENT workstations</h1>
 								</header>					
-				<div class="image main"><img src="images/pic02.jpg" alt="" /></div>
+				<div class="image main"><img src="images/pic021.jpg" alt="" /></div>
 					<div class="row">
-  						<img src="images/pic021.jpeg" alt="" style="width:25%"><img src="images/pic022.jpeg" alt="" style="width:25%"><img src="images/pic023.jpeg" alt="" style="width:25%"><img src="images/pic024.jpeg" alt="" style="width:25%">					
+  						<img src="images/pic02.jpg" alt="" style="width:25%"><img src="images/pic022.png" alt="" style="width:25%"><img src="images/pic023.png" alt="" style="width:25%"><img src="images/pic024.jpg" alt="" style="width:25%">					
 					</div>				
 					<div class="row">
-  						<img src="images/pic025.jpeg" alt="" style="width:25%"><img src="images/pic026.jpeg" alt="" style="width:25%"><img src="images/pic027.jpeg" alt="" style="width:25%"><img src="images/pic028.jpeg" alt="" style="width:25%">					
+  						<img src="images/pic025.jpg" alt="" style="width:25%"><img src="images/pic026.jpg" alt="" style="width:25%"><img src="images/pic027.jpg" alt="" style="width:25%"><img src="images/pic028.jpg" alt="" style="width:25%">					
 					</div>				
                                 
 
